@@ -28,8 +28,15 @@ Parts 7–8:
 
 ## Run
 
-On Google Colab (free T4): open `notebook/lab6.ipynb`, set the runtime to
-T4 GPU, run the cells. On a GPU VM:
+Two notebooks for Google Colab (free T4; set the runtime to T4 GPU):
+
+- `notebook/lab6_learn.ipynb` — **learn by building**: every program (device query, CPU
+  loops, each CUDA kernel, the shared library, convolution) is written out in its own
+  cell with an explanation, a prediction to make and an experiment to try
+  ([open in Colab](https://colab.research.google.com/github/Tr3nt-Xie/ee542-lab6/blob/main/notebook/lab6_learn.ipynb))
+- `notebook/lab6.ipynb` — **just run it**: builds the repository and produces every result
+
+On a GPU VM:
 
 ```bash
 make all                     # ARCH=sm_75 for a T4 if -arch=native is unsupported
