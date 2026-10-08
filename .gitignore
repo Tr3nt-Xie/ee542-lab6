@@ -3,3 +3,4 @@ bin/
 *.so
 __pycache__/
 .ipynb_checkpoints/
+private/
