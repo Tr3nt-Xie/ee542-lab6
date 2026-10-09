@@ -9,3 +9,4 @@ private/
 notebook/*
 !notebook/*.ipynb
 .DS_Store
+HANDOFF.md
