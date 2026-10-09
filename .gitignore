@@ -4,3 +4,7 @@ bin/
 __pycache__/
 .ipynb_checkpoints/
 private/
+.venv/
+# files the learning notebook writes and builds when run inside the repo
+notebook/*
+!notebook/*.ipynb

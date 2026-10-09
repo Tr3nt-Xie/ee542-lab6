@@ -9,6 +9,8 @@ An N×N multiply does N³ multiply-adds = **2N³ flops**. Divide by the time to
 get FLOP/s; this is the only fair way to compare sizes and implementations.
 Reference points for an NVIDIA T4: about **8 TFLOP/s FP32** peak, **65 TFLOP/s
 FP16 on Tensor Cores**, **320 GB/s** memory bandwidth, PCIe 3.0 x16 at ~12 GB/s.
+For an RTX 5070 Ti: about **44 TFLOP/s FP32**, **896 GB/s**, a 48 MB L2 cache,
+and PCIe 5.0 (or 4.0, depending on the motherboard).
 
 **Arithmetic intensity** = flops per byte moved from memory. A kernel is
 *memory-bound* if intensity × bandwidth < peak flops, *compute-bound*
