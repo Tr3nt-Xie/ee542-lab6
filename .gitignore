@@ -8,3 +8,4 @@ private/
 # files the learning notebook writes and builds when run inside the repo
 notebook/*
 !notebook/*.ipynb
+.DS_Store
