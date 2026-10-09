@@ -60,7 +60,14 @@ WSL2 uses the Windows driver and runs at near-native speed.
 1. Update the **Windows** NVIDIA driver. Do **not** install a Linux NVIDIA driver
    inside WSL; the Windows driver serves WSL too.
 2. In PowerShell: `wsl --install -d Ubuntu-24.04`, then open Ubuntu.
-3. In Ubuntu, install the toolkit (NVIDIA's WSL repository) and check it:
+3. In Ubuntu, either run the setup script, which does steps 3 and 4 below in one go:
+
+   ```bash
+   git clone https://github.com/Tr3nt-Xie/ee542-lab6.git && bash ee542-lab6/scripts/setup_wsl.sh 13-3
+   ```
+
+   (the argument is the toolkit version; keep it at or below the `CUDA Version`
+   that `nvidia-smi` prints on Windows), or install the toolkit by hand and check it:
 
    ```bash
    sudo apt update && sudo apt install -y build-essential git python3-venv
